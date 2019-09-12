@@ -21,7 +21,8 @@ main {
 }
 
 section {
-  width: 960px;
+  width: 100%;
+  max-width: 960px;
 }
 
 section h1 {
@@ -29,6 +30,15 @@ section h1 {
   font-size: 50px;
   margin-bottom: 30px;
   text-align: center;
+}
+
+section p {
+  color: white;
+  font-size: 20px;
+}
+
+section p a {
+  color: #5cc77f;
 }
 
 article {
@@ -66,4 +76,78 @@ article ul li {
 
 .story figure {
   margin-top: 111px;
+}
+
+.capturas figure {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.capturas figure img {
+  border-radius: 10px;
+  width: 300px;
+  height: 300px;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  padding: 50px 0;
+}
+
+footer hr {
+  width: 200px;
+  height: 2px;
+  background: #fff;
+  margin-bottom: 25px;
+}
+
+footer form {
+  font-size: 25px;
+  width: 100%;
+  max-width: 960px;
+}
+
+footer form p {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+footer form input {
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  flex: 1;
+  height: 40px;
+}
+
+footer form div {
+  border: none;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+footer form div input {
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  flex: 1;
+  height: 40px;
+  margin: 0 10px;
+}
+
+footer form div select {
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  flex: 1;
+  height: 40px;
+  margin: 0 10px;
 }
