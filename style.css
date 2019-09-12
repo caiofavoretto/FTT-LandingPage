@@ -1,0 +1,69 @@
+body {
+  background: #130c1e;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  background: url('./assets/background.png') no-repeat center top;
+}
+
+header {
+  text-align: center;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section {
+  width: 960px;
+}
+
+section h1 {
+  color: #fff;
+  font-size: 50px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+article {
+  margin-bottom: 50px;
+  position: relative;
+}
+
+article h2 {
+  color: #fff;
+  font-size: 40px;
+  margin-bottom: 25px;
+}
+
+article p {
+  color: #bebebe;
+  font-size: 25px;
+  line-height: 2;
+}
+
+article ul {
+  margin-left: 20px;
+}
+
+article ul li {
+  font-size: 25px;
+  line-height: 2;
+  list-style: none;
+}
+
+.game {
+  width: 100%;
+  height: 550px;
+  background: #5cc77f;
+}
+
+.story figure {
+  margin-top: 111px;
+}

@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  background: #fff;
+  -webkit-font-smoothing: antialiased !important;
+}
+
+body,
+input,
+button {
+  color: #fff;
+  font-size: 14px;
+  font-family: hydrophilia-iced, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+button {
+  cursor: pointer;
+}
+
+hr {
+  border: none;
+}
