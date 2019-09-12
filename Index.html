@@ -1,111 +1,125 @@
 <!-- Caio William Favoretto  RA: 082170041 -->
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>End Me</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="global.css" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://use.typekit.net/bsx7hul.css" />
-  </head>
-  <body>
-    <div class="container">
-      <nav></nav>
-      <header>
-        <img src="./assets/header.png" alt="Título" />
-      </header>
-      <main>
-        <section>
-          <article class="game"></article>
-          <article class="story">
-            <h2>
-              História
-            </h2>
-            <p>
-              Em um mundo onde existe apenas um objetivo: chegar ao farol.
-              <br />
-              Não importa o que aconteça, você deve completar a fase!
-            </p>
-            <figure>
-              <img src="./assets/dash.gif" alt="Ataque investida" />
-            </figure>
-          </article>
-        </section>
-        <section>
-          <h1>Informações</h1>
-          <article>
-            <h2>Como jogar</h2>
-            <p>
-              Tente chegar ao fim da fase, mas não confie no que o jogo diz.
-            </p>
-          </article>
 
-          <article>
-            <h2>Controles</h2>
-            <ul>
-              <li>Setas / WASD → <strong>Mover</strong></li>
-              <li>Z / Espaço → <strong>Pular</strong></li>
-              <li>X / Shift → <strong>Usar habilidade</strong></li>
-              <li>
-                Tab (segurar) + Direita ou esquerda →
-                <strong>Escolher habilidade</strong>
-              </li>
-              <li>Esc → <strong>Pause</strong></li>
-            </ul>
-          </article>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>End Me</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="global.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://use.typekit.net/bsx7hul.css" />
+  <script src="TemplateData/UnityProgress.js"></script>
+  <script src="Build/UnityLoader.js"></script>
+  <script>
+    var unityInstance = UnityLoader.instantiate("unityContainer", "Build/v1.0.1.json", { onProgress: UnityProgress });
+  </script>
+</head>
 
-          <article>
-            <h2>Créditos</h2>
-            <p>Desenvolvido por Particles Games</p>
-            <ul>
-              <li>
-                Designer e desenvolvedor → <strong>Caio Favoretto</strong>
-              </li>
-              <li>Level designer → <strong>Thomaz Erlach</strong></li>
-              <li>Música e efeitos sonoros → <strong>Thiago Costa</strong></li>
-            </ul>
-          </article>
-        </section>
-        <section>
-          <h1>Mídias</h1>
-          <article class="capturas">
-            <h2>Capturas de tela</h2>
-            <figure>
-              <img src="./assets/screenshot-1.png" alt="Captura 1" />
-              <img src="./assets/screenshot-1.png" alt="Captura 2" />
-              <img src="./assets/screenshot-1.png" alt="Captura 3" />
-            </figure>
-          </article>
+<body>
+  <div class="container">
+    <nav></nav>
+    <header>
+      <img src="./assets/header.png" alt="Título" />
+    </header>
+    <main>
+      <section>
+        <article class="game">
+          <div class="webgl-content">
+            <div id="unityContainer"></div>
+          </div>
+          <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
+        </article>
+        <article class="story">
+          <h2>
+            História
+          </h2>
           <p>
-            Para mais informações acesse
-            <a href="https://particles.games" target="_blank"
-              >https://particles.games</a
-            >
+            Em um mundo onde existe apenas um objetivo: chegar ao farol.
+            <br />
+            Não importa o que aconteça, você deve completar a fase!
           </p>
-        </section>
-      </main>
-      <footer>
-        <hr />
-        <form action="">
-          <p>Se inscreva para receber todas as atualizações</p>
-          <div>
-            <input type="text" name="name" id="Name" />
-            <input type="text" name="lastName" id="LastName" />
-          </div>
-          <div>
-            <input type="text" name="age" id="Age" />
-            <select name="gender" id="Gender">
-              <option value="Masculino"></option>
-              <option value="Feminino"></option>
-              <option value="Outro"></option>
-            </select>
-          </div>
-          <input type="email" name="email" id="Email" />
-        </form>
-      </footer>
-    </div>
-  </body>
+          <figure>
+            <img src="./assets/dash.gif" alt="Ataque investida" />
+          </figure>
+        </article>
+      </section>
+      <section>
+        <h1>Informações</h1>
+        <article>
+          <h2>Como jogar</h2>
+          <p>
+            Tente chegar ao fim da fase, mas não confie no que o jogo diz.
+          </p>
+        </article>
+
+        <article>
+          <h2>Controles</h2>
+          <ul>
+            <li>Setas / WASD → <strong>Mover</strong></li>
+            <li>Z / Espaço → <strong>Pular</strong></li>
+            <li>X / Shift → <strong>Usar habilidade</strong></li>
+            <li>
+              Tab (segurar) + Direita ou esquerda →
+              <strong>Escolher habilidade</strong>
+            </li>
+            <li>Esc → <strong>Pause</strong></li>
+          </ul>
+        </article>
+
+        <article>
+          <h2>Créditos</h2>
+          <p>Desenvolvido por Particles Games</p>
+          <ul>
+            <li>
+              Designer e desenvolvedor → <strong>Caio Favoretto</strong>
+            </li>
+            <li>Level designer → <strong>Thomaz Erlach</strong></li>
+            <li>Música e efeitos sonoros → <strong>Thiago Costa</strong></li>
+          </ul>
+        </article>
+      </section>
+      <section>
+        <h1>Mídias</h1>
+        <article class="capturas">
+          <h2>Capturas de tela</h2>
+          <figure>
+            <img src="./assets/screenshot-1.png" alt="Captura 1" />
+            <img src="./assets/screenshot-1.png" alt="Captura 2" />
+            <img src="./assets/screenshot-1.png" alt="Captura 3" />
+          </figure>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <h1>Acompanhe nosso trabalho</h1>
+      <hr />
+      <form action="">
+        <p>Inscreva-se para receber todas as atualizações</p>
+        <div>
+          <input type="text" placeholder="Nome" name="name" id="Name" required />
+          <input type="text" placeholder="Sobrenome" name="lastName" id="LastName" required />
+        </div>
+        <div>
+          <input type="number" placeholder="Idade" name="age" id="Age" required />
+          <select name="gender" id="Gender" required>
+            <option value="" selected disabled hidden>Gênero</option>
+            <option value="Masculino">Masculino</option>
+            <option value="Feminino">Feminino</option>
+            <option value="Outro">Outro</option>
+          </select>
+        </div>
+        <input type="email" placeholder="E-mail" name="email" id="Email" />
+        <button type="submit">Inscrever-se</button>
+      </form>
+      <p>
+        Para mais informações acesse
+        <a href="https://particles.games" target="_blank">https://particles.games</a>
+      </p>
+    </footer>
+  </div>
+</body>
+
 </html>

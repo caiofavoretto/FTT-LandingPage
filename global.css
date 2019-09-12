@@ -12,6 +12,7 @@ body,
 }
 
 body {
+  color: #fff;
   background: #fff;
   -webkit-font-smoothing: antialiased !important;
 }
@@ -19,11 +20,15 @@ body {
 body,
 input,
 button {
-  color: #fff;
   font-size: 14px;
   font-family: hydrophilia-iced, sans-serif;
   font-weight: 400;
   font-style: normal;
+}
+
+input,
+button {
+  color: #262626;
 }
 
 button {

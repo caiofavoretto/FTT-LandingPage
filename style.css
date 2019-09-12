@@ -37,10 +37,6 @@ section p {
   font-size: 20px;
 }
 
-section p a {
-  color: #5cc77f;
-}
-
 article {
   margin-bottom: 50px;
   position: relative;
@@ -74,6 +70,20 @@ article ul li {
   background: #5cc77f;
 }
 
+.fullscreen {
+  width: 38px;
+  height: 38px;
+  background: url(./assets/fullscreen.png);
+  position: absolute;
+  right: 0;
+  transform: translateY(-38px);
+}
+
+#unityContainer {
+  width: 960px; 
+  height: 550px;
+}
+
 .story figure {
   margin-top: 111px;
 }
@@ -96,7 +106,22 @@ footer {
   flex-direction: column;
   align-items: center;
   height: 100%;
-  padding: 50px 0;
+  padding: 70px 0 150px 0;
+}
+
+footer h1 {
+  color: #fff;
+  font-size: 40px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+footer p {
+  font-size: 25px;
+}
+
+footer p a {
+  color: #5cc77f;
 }
 
 footer hr {
@@ -110,31 +135,72 @@ footer form {
   font-size: 25px;
   width: 100%;
   max-width: 960px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 footer form p {
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
-footer form input {
+/* footer form input {
   border: none;
   border-radius: 5px;
   width: 100%;
+  height: 40px;
+} */
+footer form input {
+  padding: 0 15px;
+  border: none;
+  border-radius: 5px;
   flex: 1;
   height: 40px;
+  margin: 0 20px 20px 20px;
+  width: calc(80% - 20px);
+}
+
+footer form button {
+  padding: 0 15px;
+  border: none;
+  border-radius: 5px;
+  flex: 1;
+  height: 40px;
+  margin: 0 20px;
+  width: calc(80% - 20px);
+  background: #5cc77f;
+  color: white;
+  font-size: 20px;
+}
+
+footer form input::placeholder {
+  color: #888
 }
 
 footer form div {
   border: none;
-  width: 100%;
+  width: 80%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  margin: 0 auto 20px auto;
 }
 
 footer form div input {
+  padding: 0 15px;
+  border: none;
+  border-radius: 5px;
+  flex: 1;
+  height: 40px;
+  margin: 0 10px;
+  width: 80%;
+}
+
+footer form div select,
+footer form div select option {
+  color: #262626;
+  padding: 0 15px;
   border: none;
   border-radius: 5px;
   width: 100%;
@@ -143,11 +209,12 @@ footer form div input {
   margin: 0 10px;
 }
 
-footer form div select {
-  border: none;
-  border-radius: 5px;
-  width: 100%;
-  flex: 1;
-  height: 40px;
-  margin: 0 10px;
+footer form div select:invalid,
+footer form div select option[value=""] {
+  color: #888
 }
+
+[hidden] {
+  display: none;
+}
+
